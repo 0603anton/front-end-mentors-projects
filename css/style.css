@@ -1,0 +1,121 @@
+:root {
+    font-size: 18px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+
+}
+
+main {
+    background: hsl(185, 75%, 39%);
+    font-family: 'Kumbh Sans', sans-serif;
+    background-image: url(../images/bg-pattern-top.svg), url(../images/bg-pattern-bottom.svg);
+    background-position: top -400px left -50%, bottom -400px right -50%;
+    background-repeat: no-repeat, no-repeat;
+    height: 100vh;
+    display:flex ;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+}
+
+.card {
+    width: 350px;
+    border-radius: 20px;
+    background: white ;
+    overflow: hidden;
+    text-align: center;
+    box-shadow:
+  0 3.4px 5.6px rgba(0, 0, 0, 0.034),
+  0 7.3px 11.9px rgba(0, 0, 0, 0.048),
+  0 12.2px 20px rgba(0, 0, 0, 0.06),
+  0 19.5px 31.9px rgba(0, 0, 0, 0.072),
+  0 33.3px 54.4px rgba(0, 0, 0, 0.086),
+  0 76px 124px rgba(0, 0, 0, 0.12)
+;
+
+}
+
+.card-header {
+    background-image:url(../images/bg-pattern-card.svg);
+    background-size: cover;
+    height: 150px;
+}
+
+.card-body {
+    padding: 0 20px 25px;
+}
+
+.image-holder {
+    height: 110px;
+    width: 110px;
+    border-radius: 50%;
+    border: 5px solid white;
+    overflow: hidden;
+    margin: -55px auto 20px auto;
+}
+
+.image-holder img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.name-age {
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+.age,
+.city,
+.meta {
+    color: hsl(229, 23%, 23%);
+    font-weight: 400;
+    opacity: 0.7;
+}
+
+.value {
+    font-weight: 700;
+}
+
+.city {
+    font-size: .8rem;
+}
+
+.card-footer {
+   border-top: 1px solid hsl(0, 3%, 86%); 
+   display: flex;
+   padding: 10px 25px;
+}
+
+.card-footer .item {
+    flex: 1;
+    height: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-footer .value {
+    font-size: 1.1rem;
+    margin-bottom: 6px;
+}
+
+.card-footer .item .meta {
+    font-size: 0.6rem;
+    letter-spacing: 1px;
+}
+
+@media (max-width: 376px) {
+    main {
+        background-position: top -500px left 130%, bottom -500px right 130%;
+    }
+}
